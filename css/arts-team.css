@@ -58,7 +58,7 @@ body {
 
 body {
 
-    font-family: 'RobotoSlabRegular', Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
 hr {   /* custom horizontal line <hr> can be customized, currently orange line*/
@@ -356,7 +356,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(58,83,155,.9); /* for 3A539B with 0.9 opacity for thumbnails hover*/
+    background: rgba(58,83,155,.6); /* for 3A539B with 0.9 opacity for thumbnails hover*/
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -414,20 +414,30 @@ header .header-content .header-content-inner p {
 }
 
 .profile-pic {
-    padding-top: 2vh;
     padding-bottom: 2vh;
-    padding-right:2vw;
-    padding-left:2vw;
+    padding-top:2vh;
+    overflow: hidden; 
+    padding-left: 1vw;
+    padding-right: 1vw;
+    max-height: 500px; 
   /*  height: 500px;*/
+}
 
+.profile-pic h3 {
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 100%;
+}
+.profile-pic h4 {
+    font-size:14px;
 }
 
 @media(max-width:767px) {
     .profile-pic {
     padding-top: 2vh;
     padding-bottom: 2vh;
-    padding-right:12vw;
-    padding-left:12vw;
+    padding-right:3vw;
+    padding-left:3vw;
     } 
 }
 
@@ -755,11 +765,11 @@ body {
     color: #3A539B;
 }
 
-.mission {
+.align-left {
     text-align: left;
 }
 
-.vision {
+.align-right {
     text-align: right;
 }
 
@@ -786,9 +796,17 @@ body {
     width: 33%;
 }
 
-
 .image-cropper {
+
+}
+
+.circle-image-cropper {
     position: relative;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 20%;
+}
+
+.contact {
+    background-color: #343434 ;
+    color: white;
 }

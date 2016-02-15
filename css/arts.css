@@ -26,6 +26,11 @@ body {
 }
 
 @font-face  {
+    font-family: 'Proxima'; 
+    src: url('../fonts/proximanova-extrabold-webfont.ttf');
+}
+
+@font-face  {
     font-family: 'ADAMCGPRO'; 
     src: url('../fonts/ADAMCGPRO/ADAMCGPRO.otf');
 }
@@ -644,7 +649,6 @@ body {
 
 
 .caption-carousel {
-    font-family: 'ADAMCGPRO','Helvetica Neue',Arial,sans-serif;
     position: absolute;
     top: 0;
     padding-left: 10%;
@@ -662,12 +666,17 @@ body {
     align-items: center;
     justify-content:center;
     height: 100%;
-    font-size: 2em;
+}
+
+.caption-carousel h2 {
+    font-family: 'Proxima','Helvetica Neue',Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
 }
 
 @media (max-width: 767px) {
     .caption-carousel {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 

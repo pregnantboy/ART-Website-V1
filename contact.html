@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Asia Risk Transfer Solutions</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/arts-contact.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-thick">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class= "page-scroll"><img src= "img/logosmall.png" class = "navbar-logo"/></a>
+                    <a class="navbar-brand page-scroll navblack " href="index.html" id="navbar-brand">
+                     Asia Risk Transfer Solutions</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right navblack">
+                        <li>
+                            <a class="page-scroll" href="/">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/team.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#page-top">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <header class="map-div">
+            <div class="map" id="map"></div>
+        </header>
+
+        <section class = "container contact-container">
+            <div class = "row">
+                <div class = "col-md-6">
+                    <form class="message" method="post" action="email.php">
+                        <input type="text" id="name" name="name" class="feedback-input" placeholder="Name" required />   
+                        <input type="email" id="email" name="email" class="feedback-input" placeholder="Email" required/>
+                        <textarea id="message" name="message" class="feedback-input" placeholder="Message" required></textarea>
+                        <button class="btn sharp btn-primary" id="submitbutton" style="width:100%; height:6vh;">Send</button> 
+                        <div class="errormsg" id="form-messages"></div>
+                    </form>
+                </div>
+                <div class = "col-md-6 socialmedia">
+                    <div class= "social-line align-right">
+                           <a href="mailto:admin@asiarisktransfer.com" target="_top">admin@asiarisktransfer.com<i class="fa fa-2x fa-envelope-o text-primary social-logo" data-wow-delay=".3s"></i></a> 
+                    </div>
+                     <div class= "social-line align-right">
+                           <a href="https://www.linkedin.com/company/asia-risk-transfer-solutions" target="_blank">linkedin<i class="fa fa-2x fa-linkedin-square text-primary social-logo" data-wow-delay=".3s"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact" >
+            <div class="container" >
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section">Let's Keep In Touch!</h2>
+                        <hr class="primary">
+                        <p>Join our movement to design, develop and deliver tech-driven risk transfer innovations and solutions for developing communities worldwide.</p>
+                        <form action="//asiarisktransfer.us12.list-manage.com/subscribe/post?u=6b5ae619736bb60e4929db047&amp;id=b43d2a4a40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" target="_blank" novalidate>
+                            <input type="email" name="EMAIL" class="form-control" size="60" placeholder="Email Address" required>
+                            <br class="responsive-break"/>
+                            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn sharp btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"async defer></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/jquery.lettering.js"></script>
+        <script src="js/jquery.textillate.js"></script>
+        <script src="js/wow.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="js/creative.js"></script>
+
+        <script>
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var var_location = new google.maps.LatLng(1.2980219,103.7852915);
+                var map = new google.maps.Map(mapDiv, {
+                  center: {lat:1.3055181,lng:103.7852915},
+                  zoom: 14
+                });
+                var contentString = 
+                    '<div id="infowindow_content">'+
+                    '<p><strong>Come find us</strong><br>'+
+                    'Launchpad@One-North<br>' +
+                    '79 Ayer Rajah Crescent, 04-01<br>'+
+                    'Singapore 139955</p>'+
+                    '<a href="https://www.google.com.sg/maps/place/79+Ayer+Rajah+Crescent,+Block+79,+Singapore+139955/@1.2980219,103.7852915,18z/data=!4m2!3m1!1s0x31da1a4fe45692e5:0xc90d9ee9e29fd8c2" target="_blank">Open in Maps</a>'
+                    '</div>';
+         
+                var var_infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    position: var_location
+                  });
+                var_infowindow.open(map);
+
+            };
+                
+            $(document).ready(function() {
+                $('.navbar-default').css({'opacity':1});
+                var form = $('.message');
+                var sendbutton = $('#submitbutton');
+                var formMessages = $('#submitbutton');
+                $(form).submit(function(event) {
+                    // Stop the browser from submitting the form.
+                    event.preventDefault();
+
+                    // TODO
+                    var formData = $(form).serialize();
+                    $.ajax({
+                        type: 'POST',
+                        url: $(form).attr('action'),
+                        data: formData
+                    }).done(function(response) {
+                        $(formMessages).text('');
+                        // Set the message text.
+                        $(sendbutton).text('Sent!');
+                        $(sendbutton).css({'background-color':'#1BBC9B'});
+                        setTimeout(function(){ 
+                            $(sendbutton).css({'background-color':'#3A539B'});
+                            $(sendbutton).text('Send');
+
+                        },2000);
+                        // Clear the form.
+                        $('#name').val('');
+                        $('#email').val('');
+                        $('#message').val('');
+                    }).fail(function(data) {
+                        // Set the message text.
+                        if (data.responseText !== '') {
+                            $(formMessages).text(data.responseText);
+                        } else {
+                            $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                        }
+                        setTimeout(function(){ 
+                            $(formMessages).text('');
+                        },2000);
+                    });
+                });
+            });
+        </script>
+    
+</body>     
+
+</html>

@@ -13,7 +13,7 @@
 }
 
 .stepbackground {
-	padding-top: 17vh;
+	padding-top: 1vh;
 	background-color:white;
 	overflow-x: hidden;
 	margin-right: 0;
@@ -26,17 +26,17 @@
 }
 
 .steps {
-	padding-top: 4vh;
-	padding-bottom: 3vh;
-	min-height: 400px;
+	min-height: 220px;
 }
 
 .stepstext{
-	padding-top: 6vh;
+	padding-top: 10vh;
 	padding-left: 3vw;
 	text-align: justify;
 }
-
+.stepstext h2 {
+	text-transform: none;
+}
 .stepstext h3 {
 	line-height: 150%;
 	font-size: 17px;
@@ -46,6 +46,10 @@
 	text-align: center;
 	font-size: 17px;
 	line-height: 150%;
+}
+
+.contact-container {
+	padding-top: 10px;
 }
 
 @media(max-width:767px) {
@@ -70,6 +74,7 @@
 
 	.laststep{
 		margin-bottom: 10px;
+		margin-left: -130px;
 	}
 
 	.stepstext h3 {
@@ -167,30 +172,30 @@
 
 .backhouse {
 	position:absolute;
-	left:290px;
-	top: 0px;
-	height: 340px;
-	width: 235px;
+	left:260px;
+	top: 20px;
+	height: 261px;
+	width: 180px;
 	 -webkit-animation: quakerighttop 2s infinite linear;  
     animation: quakerighttop 2s infinite linear;
 }
 
 .middlehouse{
 	position:absolute;
-	left:80px;
-	top: px;
-	height: 344px;
-	width: 234px;
+	left:110px;
+	top: 20px;
+	height: 264px;
+	width: 167px;
 	 -webkit-animation: quakeleft 2s infinite linear;  
     animation: quakeleft 2s infinite linear;
 }
 
 .fronthouse{
 	position:absolute;
-	top: 260px;
-	left: 293px;
-	height: 80px;
-	width: 184px;
+	top: 222px;
+	left: 263px;
+	height: 61px;
+	width: 142px;
 	z-index: 5;
 	-webkit-animation: quakerightbot 2s infinite linear;  
     animation: quakerightbot 2s infinite linear;
@@ -198,18 +203,18 @@
 
 .getmoney {
 	position:absolute;
-	left:100px;
+	left:140px;
 	top:100px;
-	width:418px;
-	height:277px;
+	width:321px;
+	height:213px;
 }
 
 .coins {
 	position: absolute;
-	left: 230px;
-	top: 10px;
-	width:180px;
-	height: 140px;
+	left: 243px;
+	top: 30px;
+	width:135px;
+	height: 110px;
 }
 
 
@@ -273,27 +278,50 @@
 }
 
 @keyframes quakeleft {
-	0%   {top:0px; left:80px;}
-    25% {top:-2px; left:84px;}
-    50%   {top:3px; left:76px;}
-    75% {top:2px; left: 82px;t}
-    100%   {top:0px; left:80px;}
+	0%   {top:20px; left:110px;}
+    25% {top:18px; left:114px;}
+    50%   {top:23px; left:106px;}
+    75% {top:22px; left: 112px;t}
+    100%   {top:20px; left:110px;}
 }
 
 @keyframes quakerighttop {
-	0%   {top:0px; left:290px;}
-    25% {top:5px; left: 293px;}
-    50%   {top:2px; left: 296px;}
-    75% {top:-5px; left: 288px;t}
-    100%   {top:0px; left:290px;}
+	0%   {top:20px; left:260px;}
+    25% {top:25px; left: 263px;}
+    50%   {top:22px; left: 266px;}
+    75% {top:15px; left: 258px;t}
+    100%   {top:20px; left:260px;}
 }
 
 @keyframes quakerightbot {
-	0%   {top:260px; left:293px;}
-    25% {top:265px; left: 296px;}
-    50%   {top:262px; left: 299px;}
-    75% {top:255px; left: 291px;}
-    100%   {top:260px; left:293px;}
+	0%   {top:222px; left:263px;}
+    25% {top:227px; left: 266px;}
+    50%   {top:224px; left: 269px;}
+    75% {top:217px; left: 261px;}
+    100%   {top:222px; left:263px;}
 }
 
+@-webkit-keyframes quakeleft {
+	0%   {top:20px; left:110px;}
+    25% {top:18px; left:114px;}
+    50%   {top:23px; left:106px;}
+    75% {top:22px; left: 112px;t}
+    100%   {top:20px; left:110px;}
+}
+
+@-webkit-keyframes quakerighttop {
+	0%   {top:20px; left:260px;}
+    25% {top:25px; left: 263px;}
+    50%   {top:22px; left: 266px;}
+    75% {top:15px; left: 278px;t}
+    100%   {top:20px; left:260px;}
+}
+
+@-webkit-keyframes quakerightbot {
+	0%   {top:222px; left:263px;}
+    25% {top:227px; left: 266px;}
+    50%   {top:224px; left: 269px;}
+    75% {top:217px; left: 261px;}
+    100%   {top:222px; left:263px;}
+}
 
