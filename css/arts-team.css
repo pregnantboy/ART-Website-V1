@@ -362,7 +362,7 @@ header .header-content .header-content-inner p {
     transition: all .35s;
 }
 
-@media (max-width: 677px) {
+@media (max-width: 767px) {
     .portfolio-box .portfolio-box-caption {
         opacity: 1;
         background: rgba(58,83,155,.4);  /*thumbnail hover*/

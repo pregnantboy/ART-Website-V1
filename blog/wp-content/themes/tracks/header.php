@@ -4,20 +4,21 @@
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html <?php language_attributes(); ?>><!--<![endif]-->
 
-<head>
+<head>		
+		<title>Asia Risk Transfer Solutions</title>
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-thick wow fadeIn" style= "display:none">
 		            <div class="container-fluid">
 		                <!-- Brand and toggle get grouped for better mobile display -->
 		                <div class="navbar-header">
 		                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		                        <span class="sr-only">Toggle navigation</span>
+		                        <span class="sr-only"></span>
 		                        <span class="icon-bar"></span>
 		                        <span class="icon-bar"></span>
 		                        <span class="icon-bar"></span>
 		                    </button>
 		                    <a href="#page-top" class= "page-scroll"><img src= "/img/logosmall.png" class = "navbar-logo"/></a>
-		                    <a class="navbar-brand page-scroll navwhite" href="#page-top" id="navbar-brand">
-		                     Asia Risk Transfer Solutions</a>
+		                    <a class="navbar-brand page-scroll navwhite" href="/blog" id="navbar-brand">
+		                     Asia Risk Transfer Solutions Blog</a>
 		                </div>
 
 		                <!-- Collect the nav links, forms, and other content for toggling -->

@@ -671,12 +671,12 @@ body {
 .caption-carousel h2 {
     font-family: 'Proxima','Helvetica Neue',Arial,sans-serif;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 4.5em ;
 }
 
 @media (max-width: 767px) {
-    .caption-carousel {
-        font-size: 1em;
+    .caption-carousel h2{
+        font-size: 3em;
     }
 }
 
