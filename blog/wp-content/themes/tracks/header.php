@@ -30,7 +30,7 @@
 		                            <a class="page-scroll" href="/team.html">About Us</a>
 		                        </li>
 		                        <li>
-		                            <a class="page-scroll " href="/blog">Blog</a>
+		                            <a class="page-scroll blogactive" href="/blog">Blog</a>
 		                        </li>
 		                        <li>
 		                            <a class="page-scroll" href="/contact.html">Contact</a>

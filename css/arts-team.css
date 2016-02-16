@@ -356,10 +356,18 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(58,83,155,.6); /* for 3A539B with 0.9 opacity for thumbnails hover*/
+    background: rgba(58,83,155,.9);  /*thumbnail hover*/
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+}
+
+@media (max-width: 677px) {
+    .portfolio-box .portfolio-box-caption {
+        opacity: 1;
+        background: rgba(58,83,155,.4);  /*thumbnail hover*/
+        height: 25%;
+    }
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {

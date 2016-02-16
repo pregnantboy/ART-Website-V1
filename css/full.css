@@ -21,12 +21,60 @@
 
 }
 
+.ifmbackground {
+	padding-top: 1vh;
+	background-color:white;
+	overflow-x: hidden;
+	margin-right: 0;
+	margin-left: 0;
+	padding-bottom: 2vh;
+	min-height: 100%;
+}
+
 .grey {
 	background-color:rgb(245,245,245);
 }
+.darkgrey {
+	background-color:rgb(240,240,240);
+}
+
 
 .steps {
 	min-height: 220px;
+}
+
+.who-we-are {
+	padding-bottom: 3vh;
+}
+
+.ifm-container {
+	padding-top: 20px;
+	height: 340px;
+	width: 350px;
+ 	text-align:center;
+}
+
+.padding-on-right {
+	padding-right: 255px;
+}
+
+.padding-on-top {
+	padding-top: 10px;
+}
+
+.ifm-text {
+	padding: 3vh 5vw;
+	text-align: center;
+}
+
+.who-we-are-text {
+	padding: 6vh 5vw 3vh 5vw;
+	text-align: center;
+}
+
+.ifm-text h3{
+	line-height: 150%;
+	font-size: 17px;
 }
 
 .stepstext{
@@ -46,10 +94,9 @@
 	text-align: center;
 	font-size: 17px;
 	line-height: 150%;
-}
-
-.contact-container {
 	padding-top: 10px;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 @media(max-width:767px) {
@@ -57,7 +104,6 @@
 		padding-top: 0;
 		padding-bottom: 15vh;
 		overflow-y: visible;
-
 	}
 	.steps {
 		min-height: 300px;
@@ -85,23 +131,20 @@
 
 
 .satellite {
-	left: 350px;
-	top: 20px;
-	height: 125	px;
+	height: 125px;
 	width:107px;
-	position:absolute;
-	-webkit-transform-origin: -70px 220px;
-	 -webkit-animation: orbit 6s infinite;  Chrome, Safari, Opera  
-    animation: orbit 6s infinite;
-
+	-webkit-transform-origin: -70px 180px;
+	 -webkit-animation: orbit 7s infinite;   
+    animation: orbit 7s infinite;
 }
 
 .earth {
-	position: absolute;
-	top: 100px;
-	left:150px;
+	position:absolute;
+	padding:0;
+	bottom: 0;
   	height:250px;
-  	width:250px;	
+  	width:250px;
+  
 }
 
 .cashier {
@@ -219,15 +262,18 @@
 
 
 @-webkit-keyframes orbit {
-   0%   {transform:rotate(0deg);animation-timing-function: linear;}
-    50% {transform: rotate(-50deg); animation-timing-function: linear;}
-    100%   {transform: rotate(0deg);animation-timing-function: linear;}
+    0%   {transform:rotate(10deg);animation-timing-function: ease;}
+    25% {transform: rotate(-20deg); animation-timing-function: ease;}
+    50%  {transform: rotate(-50deg); animation-timing-function: ease;}
+    75% {transform: rotate(-20deg); animation-timing-function: ease;}
+    100%   {transform: rotate(10deg);animation-timing-function: ease;}
 }
-
 @keyframes orbit {
-    0%   {transform:rotate(0deg);animation-timing-function: linear;}
-    50% {transform: rotate(-50deg); animation-timing-function: linear;}
-    100%   {transform: rotate(0deg);animation-timing-function: linear;}
+    0%   {transform:rotate(10deg);animation-timing-function: ease;}
+    25% {transform: rotate(-20deg); animation-timing-function: ease;}
+    50%  {transform: rotate(-50deg); animation-timing-function: ease;}
+    75% {transform: rotate(-20deg); animation-timing-function: ease;}
+    100%   {transform: rotate(10deg);animation-timing-function: ease;}
 }
 
 @-webkit-keyframes shakeright {
