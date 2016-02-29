@@ -63,14 +63,14 @@ body {
 
 hr {   /* custom horizontal line <hr> can be customized, currently orange line*/
     max-width: 50px;
-    border-color: #3A539B;
+    border-color: #712221;
     border-width: 3px;        
 }
 
 hr.long {
     max-width: 70%;
     text-align: left;
-    border-color: #3A539B;
+    border-color: #712221;
     border-width: 3px;     
 }
 
@@ -79,7 +79,7 @@ hr.light {
 }
 
 a {
-    color: #3A539B;
+    color: #712221;
     color: black;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -89,7 +89,7 @@ a {
 a:hover,
 a:focus {
     /*underline color */
-    /*color: #3A539B;*/
+    /*color: #712221;*/
     color: black;
 }
 
@@ -112,7 +112,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #3A539B;
+    background-color: #712221;
     height: 100%;
 }
 
@@ -145,9 +145,9 @@ section {
 
 
 .navbar-default {
-    border-color: rgba(34,34,34,0);
+    border-color: rgba(0,34,34,0);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
+    background-color: #343434;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -157,11 +157,15 @@ section {
     opacity: 0;
 }
 
+.navbar-default li {
+    color: rgba(255,255,255,0.6);
+}
+
 /* company name brand*/
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 0;
 }
 
@@ -175,17 +179,20 @@ section {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 400;
-    color: #222;
+    color: rgba(255,255,255,0.8);
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #3A539B;
+    color: rgba(255,255,255,0.9);
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: rgba(0,0,0,0.8);
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: rgba(0,0,0,0.8)!important;
+    color: rgba(255,255,255,0.8)!important;
     font-weight:700;
     background-color: transparent;
 }
@@ -195,15 +202,21 @@ section {
     background-color: transparent;
 }
 
+
+.navbar-default .navbar-toggle,.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    border-color: rgba(0,0,0,0.6);
+    background-color: #343434;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: transparent; /*set border for top nav bar as transparent*/
-        background-color: transparent;
+        background-color: #712221;
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(0,0,0,0.6);
-        font-size: 18px; /* max font size for big devices*/
+        color: rgba(255,255,255,.6);
+        font-size: 15px; /* max font size for big devices*/
     }
     .navbar-default img {
         display: run-in;
@@ -211,46 +224,49 @@ section {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: rgba(0,0,0,0.8);
+        color: rgba(255,255,255,0.8);
     }
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(0,0,0,0.6);
+        color: rgba(255,255,255,0.6);
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: rgba(0,0,0,0.8);
+        color: rgba(255,255,255,0.8);
     }
+
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.8) ;  /*navbar background color when scrolled down*/
     }
-
-    .navbar-default.affix img {
-        opacity: 1;
+    .navbar-default.affix .nav > li.active>a,
+    .navbar-default.affix .nav>li.active>a:focus {
+         color: rgba(113,34,33,1) !important;
+        font-weight:700;
+        background-color: transparent;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 18px;
-        color: rgba(0,0,0,.6);
+        font-size: 15px;
+        color: rgba(113,34,33,1);
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: rgba(0,0,0,.8);
+        color: rgba(113,34,33,.8);
     }
 
     .navbar-default.affix .nav > li>a,
     .navbar-default.affix .nav>li>a:focus {
-        color: rgba(0,0,0,.6);
+        color: rgba(113,34,33,.6);
     }
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: rgba(0,0,0,.8);
+        color: rgba(113,34,33,.8);
     }
 }
 
@@ -356,7 +372,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(58,83,155,.9);  /*thumbnail hover*/
+    background: rgba(113,34,33,.9);  /*thumbnail hover*/
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -365,7 +381,7 @@ header .header-content .header-content-inner p {
 @media (max-width: 767px) {
     .portfolio-box .portfolio-box-caption {
         opacity: 1;
-        background: rgba(58,83,155,.4);  /*thumbnail hover*/
+        background: rgba(113,34,33,.4);  /*thumbnail hover*/
         height: 25%;
     }
 }
@@ -413,7 +429,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #3A539B;
+    color: #712221;
 }
 
 .no-gutter > [class*=col-] {
@@ -519,9 +535,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #3A539B;
+    border-color: #712221;
     color: #fff;
-    background-color: #3A539B;
+    background-color: #712221;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -562,12 +578,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #3A539B;
-    background-color: #3A539B;
+    border-color: #712221;
+    background-color: #712221;
 }
 
 .btn-primary .badge {
-    color: #3A539B;
+    color: #712221;
     background-color: #fff;
 }
 
@@ -642,14 +658,14 @@ body {
     float: left;
     width:50%;
     height:3px;
-    background-color:#3A539B;
+    background-color:#712221;
 }
 
 .right-line {
     float: right;
     width: 50%;
     height:3px;
-    background-color:#3A539B;
+    background-color:#712221;
 }
 
 
@@ -688,10 +704,6 @@ body {
     justify-content:center;
     height: 100%;
     font-size: 2em;
-}
-
-.btn.sharp {
-    border-radius: 5px;
 }
 
 @media(min-width:768px) {
@@ -767,10 +779,10 @@ body {
     transition:         color .5s;
 }
 .article-thumb:hover h3{
-    color: #3A539B;
+    color: #712221;
 }
 .article-thumb:hover h5{
-    color: #3A539B;
+    color: #712221;
 }
 
 .align-left {
@@ -814,7 +826,3 @@ body {
     border-radius: 20%;
 }
 
-.contact {
-    background-color: #343434 ;
-    color: white;
-}

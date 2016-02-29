@@ -23,6 +23,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/arts-contact.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css"type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,8 +45,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class= "page-scroll"><img src= "img/logosmall.png" class = "navbar-logo"/></a>
-                    <a class="navbar-brand page-scroll navblack " href="index.html" id="navbar-brand">
+                    <a href="/" class= "page-scroll"><img src= "img/logosmall.png" class = "navbar-logo"/></a>
+                    <a class="navbar-brand page-scroll navblack " href="/" id="navbar-brand">
                      Asia Risk Transfer Solutions</a>
                 </div>
 
@@ -56,13 +57,16 @@
                             <a class="page-scroll" href="/">Home</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="/team.html">About Us</a>
+                            <a class="page-scroll" href="/concept.html">Concept</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll " href="/insurance.html">Insurance</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/technology.html">Technology</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="/blog">Blog</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#page-top">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -95,22 +99,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact" >
-            <div class="container" >
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section">Let's Keep In Touch!</h2>
-                        <hr class="primary">
-                        <p>Join our movement to design, develop and deliver tech-driven risk transfer innovations and solutions for developing communities worldwide.</p>
-                        <form action="//asiarisktransfer.us12.list-manage.com/subscribe/post?u=6b5ae619736bb60e4929db047&amp;id=b43d2a4a40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" target="_blank" novalidate>
-                            <input type="email" name="EMAIL" class="form-control" size="60" placeholder="Email Address" required>
-                            <br class="responsive-break"/>
-                            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn sharp btn-primary">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="contact" class="contact"></section>
         <script src="js/jquery.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
@@ -133,11 +122,17 @@
                 var var_location = new google.maps.LatLng(1.2980219,103.7852915);
                 var map = new google.maps.Map(mapDiv, {
                   center: {lat:1.3055181,lng:103.7852915},
-                  zoom: 14
+                  zoom: 14,
+                  zoomControl: false,
+                  scaleControl: false,
+                  scrollwheel: false,
+                  disableDoubleClickZoom: true,
+                  draggable: false,
+                  streetViewControl:false
                 });
                 var contentString = 
                     '<div id="infowindow_content">'+
-                    '<p><strong>Come find us</strong><br>'+
+                    '<p><strong>HQ</strong><br>'+
                     'Launchpad@One-North<br>' +
                     '79 Ayer Rajah Crescent, 04-01<br>'+
                     'Singapore 139955</p>'+
@@ -151,6 +146,9 @@
                 var_infowindow.open(map);
 
             };
+            $(function(){
+              $("#contact").load("footer.html"); 
+            });
                 
             $(document).ready(function() {
                 $('.navbar-default').css({'opacity':1});

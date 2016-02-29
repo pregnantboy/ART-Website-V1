@@ -1,0 +1,55 @@
+.privacy-header-text {
+	text-align: center;
+	padding-top: 12vh;
+	font-size: 60px;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: rgba(255,255,255,0.3); /*set border for top nav bar as transparent*/
+        background-color: transparent;
+	}
+}
+
+.privacy-body {
+	line-height: 28px;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 7vh;
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 100%;
+	width: 100%  !important;
+	min-width: 100%  !important;
+}
+
+.privacy-body ol {
+  list-style-type: decimal;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  max-width: 100% !important;
+  width: 100%;
+}
+
+.privacy-body ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+}
+
+.privacy-body ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em; 
+}
+
+.privacy-body li ol > li {
+  margin: 0;
+}
+
+.privacy-body li ol > li:before {
+  content: counters(item, ".") " ";
+}
+

@@ -6,7 +6,12 @@
 
 <head>		
 		<title>Asia Risk Transfer Solutions</title>
-		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-thick wow fadeIn" style= "display:none">
+		
+	<?php wp_head(); ?>
+</head>
+
+<body id="<?php print get_stylesheet(); ?>" <?php body_class( 'ct-body' ); ?>>
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-thick wow fadeIn" style= "display:none">
 		            <div class="container-fluid">
 		                <!-- Brand and toggle get grouped for better mobile display -->
 		                <div class="navbar-header">
@@ -16,7 +21,7 @@
 		                        <span class="icon-bar"></span>
 		                        <span class="icon-bar"></span>
 		                    </button>
-		                    <a href="#page-top" class= "page-scroll"><img src= "/img/logosmall.png" class = "navbar-logo"/></a>
+		                    <a href="/blog" class= "page-scroll"><img src= "/img/logosmall.png" class = "navbar-logo"/></a>
 		                    <a class="navbar-brand page-scroll navwhite" href="/blog" id="navbar-brand">
 		                     Asia Risk Transfer Solutions Blog</a>
 		                </div>
@@ -42,10 +47,6 @@
 		            </div>
             <!-- /.container-fluid -->
         </nav>
-	<?php wp_head(); ?>
-</head>
-
-<body id="<?php print get_stylesheet(); ?>" <?php body_class( 'ct-body' ); ?>>
 	<?php do_action( 'tracks_body_top' ); ?>
 	<div id="overflow-container" class="overflow-container">
 		<a class="skip-content" href="#main"><?php _e( 'Skip to content', 'tracks' ); ?></a>
