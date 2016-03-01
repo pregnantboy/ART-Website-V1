@@ -794,7 +794,7 @@ body {
 .ins-first-text h3 {
     font-size: 18px;
     line-height: 26px;
-    font-weight: 200;
+    font-weight: 50;
 }
 
 .ins-first {
@@ -816,7 +816,7 @@ body {
 .ins-second-text h1 {
     font-weight: 700;
     line-height: 60px;
-    font-size: 120px;
+    font-size: 40px;
 }
 
 .ins-second-text h3 {
@@ -839,7 +839,7 @@ body {
 .ins-third-text h1 {
     font-weight: 700;
     line-height: 60px;
-    font-size: 120px;
+    font-size: 40px;
 }
 
 .ins-third-text h3 {
