@@ -788,13 +788,13 @@ body {
 .ins-first-text h1 {
     font-weight: 700;
     line-height: 60px;
-    font-size: 120px;
+    font-size: 50px;
 }
 
 .ins-first-text h3 {
     font-size: 18px;
     line-height: 26px;
-    font-weight: 50;
+    font-weight: 200;
 }
 
 .ins-first {
