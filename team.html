@@ -14,7 +14,6 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css" type="text/css" />
         <!-- Plugin CSS -->
         <link rel="stylesheet" href="css/animate.css" type="text/css">
         <!-- Custom CSS -->
@@ -93,62 +92,12 @@
             </div>
         </div>
     </section>
-    <!-- <section class="team fillheight" id="team">
-        <div class = "container">
-            <div class="row">
-                <div class="col-sm-4 col-xs-12 profile-pic">
-                    <div class = "image-cropper">
-                        image must be a perfect square
-                        <img src="img/profiles/ian.jpg" class="img-responsive" alt=""/>
-                    </div>
-                    <h3 style="text-align:center;">Ian Chen</h3>
-                    <h4 style="text-align:center;">Intern</h4>
-                </div>
-                <div class="col-sm-4 col-xs-12 profile-pic">
-                    <div class = "image-cropper">
-                        <img src="img/profiles/alex.jpg" class="img-responsive" alt=""/>
-                    </div>
-                    
-                    <h3 style="text-align:center;">Alex Chen</h3>
-                    <h4 style="text-align:center;">CEO & Founder</h4>
-                </div>
-                <div class="col-sm-4 col-xs-12 profile-pic">
-                    <div class = "image-cropper">
-                        <img src="img/profiles/soham.jpg" class="img-responsive" alt=""/>
-                    </div>
-                    <h3 style="text-align:center;">Soham Ghosh</h3>
-                    <h4 style="text-align:center;">Intern</h4>
-                </div>
-                <div class="col-sm-4 col-xs-12 profile-pic">
-                    <div class = "image-cropper">
-                        <img src="img/profiles/shah.jpeg" class="img-responsive" alt=""/>
-                    </div>
-                    <h3 style="text-align:center;">Prof Haresh Shah</h3>
-                    <h4 style="text-align:center;">Chairman & Founder</h4>
-                </div>
-                <div class="col-sm-4 col-xs-12 profile-pic">
-                    <div class = "image-cropper">
-                        <img src="img/profiles/bertil.jpeg" class="img-responsive" alt=""/>
-                    </div>
-                    <h3 style="text-align:center;">Prof Bertil Andersson</h3>
-                    <h4 style="text-align:center;">Board Advisor</h4>
-                </div>
-                <div class="col-sm-4 col-xs-12 profile-pic">
-                    <div class = "image-cropper">
-                        <img src="img/profiles/soham.jpg" class="img-responsive" alt=""/>
-                    </div>
-                    <h3 style="text-align:center;">Ernest Tan</h3>
-                    <h4 style="text-align:center;">Founder</h4>
-                </div>
-            </div>
-        </div>
-    </section> -->
     
     <section>
         <div class="container-fluid">
             <div class="">
-                <div class="col-lg-4 col-sm-6 profile-pic">
-                    <div class="portfolio-box">
+                <div class="col-lg-4 col-sm-4 profile-pic">
+                    <div class="portfolio-box" id = "alex-port">
                         <img src="img/portfolio/a1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -162,38 +111,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 profile-pic">
-                    <div class="portfolio-box">
-                        <img src="img/portfolio/a2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Soham Ghosh
-                                </div>
-                                <div class="project-category">
-                                    Intern
-                                </div>
-                            </div>
-                        </div>
+                <div class = "col-xs-12 container-fluid bio-mobile" id="alex-bio">
+                    <div class='arrow-container'>
+                        <div class = 'col-sm-4 col-xs-12 arrow'></div>
+                    </div>
+                    <div class='bio bg-primary'>
+                        <h2>Alex Chen </h2>
+                        <h3>CEO & Founder
+                        </h3>
+                        <h3>
+                        <a href='google.com' ><i class='fa fa-linkedin-square fa-1x'></i></a>
+                        </h3>
+                        <p> hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/></p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 profile-pic">
-                    <div class="portfolio-box">
-                        <img src="img/portfolio/a3.jpg" class="img-responsive article-image" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Ian Chen
-                                </div>
-                                <div class="project-category">
-                                    Intern
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 profile-pic">
-                    <div class="portfolio-box">
+                <div class="col-lg-4 col-sm-4 profile-pic">
+                    <div class="portfolio-box" id="shah-port">
                         <img src="img/portfolio/a4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -207,24 +140,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 profile-pic">
-                    <div class="portfolio-box">
-                        <img src="img/portfolio/a6.png" class="img-responsive article-image" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Ernest Tan
-                                </div>
-                                <div class="project-category">
-                                    Founder &    Board Member
-                                </div>
-                            </div>
-                        </div>
+                <div class = "col-xs-12 container-fluid bio-mobile" id="shah-bio">
+                    <div class='arrow-container'>
+                        <div class='col-sm-4 mobile-removed'></div>
+                        <div class = 'col-sm-4 col-xs-12 arrow'></div>
+                    </div>
+                    <div class='col-sm-4 mobile-removed'></div>
+                    <div class='bio bg-primary'>
+                        <h2>Alex Chen </h2>
+                        <h3>CEO & Foundere
+                        </h3>
+                        <h3>
+                        <a href='google.com' ><i class='fa fa-linkedin-square fa-1x'></i></a>
+                        </h3>
+                        <p> hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/></p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 profile-pic">
-                    
-                    <div class="portfolio-box">
+                <div class="col-lg-4 col-sm-4 profile-pic">
+                    <div class="portfolio-box" id="bert-port">
                         <img src="img/portfolio/a5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -237,43 +170,197 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
-                
+                <div class = "col-xs-12 container-fluid bio-mobile" id="bert-bio">
+                    <div class='arrow-container'>
+                        <div class='col-sm-8 mobile-removed'></div>
+                        <div class = 'col-sm-4 col-xs-12 arrow'></div>
+                    </div>
+                    <div class='bio bg-primary'>
+                        <h2>Bert bert </h2>
+                        <h3>CEO & Foundere
+                        </h3>
+                        <h3>
+                        <a href='google.com' ><i class='fa fa-linkedin-square fa-1x'></i></a>
+                        </h3>
+                        <p> hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/></p>
+                    </div>
+                </div>
+                <div class = "col-sm-12 container-fluid bio-container" id="bio-big">
+                    <div class='arrow-container'>
+                        <div class='col-sm-4'></div>
+                        <div class = 'col-sm-4 arrow'></div>
+                    </div>
+                    <div class='col-sm-4'></div>
+                    <div class='bio bg-primary'>
+                        <h2>Alex Chen </h2>
+                        <h3>CEO & Foundere
+                        </h3>
+                        <h3>
+                        <a href='google.com' ><i class='fa fa-linkedin-square fa-1x'></i></a>
+                        </h3>
+                        <p> hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/>hi<br/></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 profile-pic">
+                    <div class="portfolio-box" id="ern-port">
+                        <img src="img/portfolio/a6.png" class="img-responsive article-image" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Ernest Tan
+                                </div>
+                                <div class="project-category">
+                                    Founder & Board Member
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-xs-12 container-fluid bio-mobile" id="ern-bio"></div>
+                <div class="col-lg-4 col-sm-4 profile-pic">
+                    <div class="portfolio-box" id="soh-port">
+                        <img src="img/portfolio/a2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Soham Ghosh
+                                </div>
+                                <div class="project-category">
+                                    Intern
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-xs-12 container-fluid bio-mobile" id="soh-bio"></div>
+                <div class="col-lg-4 col-sm-4 profile-pic">
+                    <div class="portfolio-box" id ="ian-port">
+                        <img src="img/portfolio/a3.jpg" class="img-responsive article-image" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Ian Chen
+                                </div>
+                                <div class="project-category">
+                                    Intern
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-xs-12 container-fluid bio-mobile" id="ian-bio"></div>
+                <div class = "col-sm-12 container-fluid bio-container" id="bio-big2"></div>
             </div>
         </section>
         
-        <section id="contact" class="contact"></section>
-
-        <script src="js/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Plugin JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/jquery.fittext.js"></script>
-        <script src="js/jquery.lettering.js"></script>
-        <script src="js/jquery.textillate.js"></script>
-        <script src="js/wow.min.js"></script>
-        <!-- Custom Theme JavaScript -->
-        <script src="js/creative.js"></script>
-        <script>
-        $(function(){
-          $("#contact").load("footer.html"); 
-        });
-        wow = new WOW(
-        {
-        boxClass:     'wow',      // default
-        animateClass: 'animated', // default
-        offset:       0,          // default
-        mobile:       false,       // default
-        live:         true        // default
-        }
-        );
-        wow.init();
-        setTimeout(function(){
-            $('.navbar-default').css({'opacity':1});
-        },1000);
-        </script>
+    <section id="contact" class="contact"></section>
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    <script>
+    $(function(){
+    $("#contact").load("footer.html");
+    });
+    wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animated', // default
+    offset:       0,          // default
+    mobile:       false,       // default
+    live:         true        // default
+    }
+    );
+    wow.init();
+    setTimeout(function(){
+    $('.navbar-default').css({'opacity':1});
+    },200);
+    $(function(){
+        var lastclicked = 0;
         
-    </body>
+        $('#alex-port').click(function () {
+            $('#alex-bio').slideToggle();
+            if (lastclicked ===1) {
+            $('#bio-big').slideUp();
+            lastclicked=0;
+            return;
+            }
+            $('#bio-big2').slideUp();
+            lastclicked = 1;
+            $('#bio-big').html($('#alex-bio').html());
+            $('#bio-big').slideDown();
+        });
+        $('#shah-port').click(function () {
+            $('#shah-bio').slideToggle();
+            if (lastclicked ===2) {
+            $('#bio-big').slideUp();
+            lastclicked=0;
+            return;
+            }
+            $('#bio-big2').slideUp();
+            lastclicked = 2;
+
+            $('#bio-big').html($('#shah-bio').html());
+            $('#bio-big').slideDown();
+        });
+        $('#bert-port').click(function () {
+            $('#bert-bio').slideToggle();
+            if (lastclicked ===3) {
+            $('#bio-big').slideUp();
+            lastclicked=0;
+            return;
+            }
+            $('#bio-big2').slideUp();
+            lastclicked = 3;
+            $('#bio-big').html($('#bert-bio').html());
+            $('#bio-big').slideDown();
+        });
+        $('#ern-port').click(function () {
+            $('#ern-bio').slideToggle();
+            if (lastclicked ===4) {
+            $('#bio-big2').slideUp();
+            lastclicked=0;
+            return;
+            }
+            $('#bio-big').slideUp();
+            lastclicked = 4;
+            $('#bio-big2').html($('#ern-bio').html());
+            $('#bio-big2').slideDown();
+        });
+        $('#soh-port').click(function () {
+            $('#soh-bio').slideToggle();
+            if (lastclicked ===5) {
+            $('#bio-big2').slideUp();
+            lastclicked=0;
+            return;
+            }
+            $('#bio-big').slideUp();
+            lastclicked = 5;
+            $('#bio-big2').html( $('#soh-bio').html());
+            $('#bio-big2').slideDown();
+        });
+        $('#ian-port').click(function () {
+            $('#ian-bio').slideToggle();
+            if (lastclicked ===6) {
+            $('#bio-big2').slideUp();
+            lastclicked=0;
+            return;
+            }
+            $('#bio-big').slideUp();
+            lastclicked = 6;
+            $('#bio-big2').html($('#ian-bio').html());
+            $('#bio-big2').slideDown();
+        });
+    });
+    </script>
+    
+</body>
 </html>

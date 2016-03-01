@@ -1,7 +1,8 @@
 .privacy-header-text {
-	text-align: center;
-	padding-top: 12vh;
-	font-size: 60px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
 }
 
 @media(min-width:768px) {
@@ -9,12 +10,14 @@
         border-color: rgba(255,255,255,0.3); /*set border for top nav bar as transparent*/
         background-color: transparent;
 	}
+  .privacy-header-text {
+    text-align: center;
+    padding-top: 12vh;
+  }   
 }
 
 .privacy-body {
 	line-height: 28px;
-	padding-left: 10vw;
-	padding-right: 10vw;
 	padding-top: 7vh;
 	margin-left: 0;
 	margin-right: 0;
@@ -23,14 +26,18 @@
 	min-width: 100%  !important;
 }
 
+@media(min-width:768px) {
+  .privacy-body {
+    padding-left: 15vw; 
+    padding-right: 15vw; 
+  }
+}
+
 .privacy-body ol {
   list-style-type: decimal;
   counter-reset: item;
   margin: 0;
-  padding: 0;
-  word-wrap: break-word;
-  max-width: 100% !important;
-  width: 100%;
+  padding: 0!important;
 }
 
 .privacy-body ol > li {

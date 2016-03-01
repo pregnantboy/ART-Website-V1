@@ -592,6 +592,15 @@ body {
     min-height: 150px;
     min-width: 100%;
     overflow: hidden;
+    font-size: 60px;
+}
+
+@media (max-width: 767px) {
+    .fillthird {
+        height: 150px;
+        min-height: 150px;
+        font-size: 40px;
+    }
 }
 
 .fillheight {
@@ -769,9 +778,9 @@ body {
 }
 
 .slide1 {
+    color:white;
     background-image: url(../img/slide14.jpeg);
     background-position: center;
     background-size: cover;
     height:100%;
-
 }
