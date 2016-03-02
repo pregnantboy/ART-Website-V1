@@ -118,7 +118,7 @@ p {
 .bg-primary {
     background-color: #712221;
     color: white;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .bg-dark {
@@ -610,12 +610,15 @@ body {
 
 .fillheight {
     max-width:100%;
-    min-height:100%;
+    min-height:100vh;
+    height: 100vh;
     padding:0;
 }
 
 .fillwidth {
-    min-width: 100%;
+    min-width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
  
 .carousel, .carousel.item{
@@ -781,14 +784,14 @@ body {
     position: absolute;
     left:0;
     top: 0;
-    padding: 70px 170px 30px 30px;
+    padding: 5vh 17vw 5vw 5vh;
     color:white;
 }
 
 .ins-first-text h1 {
     font-weight: 700;
     line-height: 60px;
-    font-size: 50px !important;
+    font-size: 50px;
 }
 
 .ins-first-text h3 {
@@ -801,17 +804,21 @@ body {
     background-image: url(../img/ins-first.png);
     background-size: cover;
     background-position: center;
+    min-height:100vh;
+    display: block;
 }
 
 .ins-second {
     background-image: url(../img/ins-second.png);
     background-size: cover;
     background-position: center;
+    height:100vh;
+    min-height: 100vh;
 }
 
 .ins-second-text {
     text-align: right;
-    padding: 70px 30px 30px 70px;
+    padding: 8vh 5vw 5vh 5vw;
 }
 .ins-second-text h1 {
     font-weight: 700;
@@ -830,11 +837,13 @@ body {
     background-image: url(../img/ins-third.png);
     background-size: cover;
     background-position: center;
+    height:100vh;
+    min-height: 100vh;
 }
 
 .ins-third-text {
     text-align: left;
-    padding: 70px 70px 30px 30px;
+    padding: 8vh 5vw 5vh 5vw;
 }
 .ins-third-text h1 {
     font-weight: 700;
@@ -848,3 +857,60 @@ body {
     line-height: 26px;
     font-weight: 200;
 }
+
+.mobile-only {
+    display:none;
+}
+@media (max-width: 767px) {
+    .mobile-removed {
+        display:none;
+    }
+    .mobile-only {
+        display:block;
+    }
+    .ins-first-text h1 {
+        line-height: 40px;
+        font-size: 30px;
+    }
+    .ins-second-text h1 {
+        line-height: 40px;
+        font-size: 30px;
+    }
+    .ins-third-text h1 {
+        line-height: 40px;
+        font-size: 30px;
+    }
+    .ins-first-text h3
+     {
+        line-height: 4.5vh;
+        font-size: 4.3vw;
+    }
+    .ins-second-text h3
+     {
+        line-height: 4.5vh;
+        font-size: 4.3vw;
+    }
+    .ins-third-text h3
+     {
+        line-height: 4.5vh;
+        font-size: 4.3vw;
+    }
+    .bg-faded-skew {
+        -webkit-transform: skewX(10deg);
+        -moz-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
+        -o-transform: skewX(10deg);
+        transform: skewX(10deg);
+        height:inherit;    
+    }
+    .ins-second {
+        min-height: 40vh;
+        height: 40vh;
+    }
+    .ins-third {
+        min-height: 60vh;
+        height: 60vh;
+    }
+
+}
+

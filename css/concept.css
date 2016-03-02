@@ -141,6 +141,7 @@ section {
 
 .no-padding {
     padding: 0;
+    margin:0;
 }
 
 @font-face  {
@@ -510,6 +511,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
+    vertical-align: middle;
     border-color: #712221;
     color: #fff;
     background-color: #712221;
@@ -609,7 +611,8 @@ body {
 
 .fillheight {
     max-width:100%;
-    min-height:100%;
+    min-height:100vh;
+    padding:0;
 }
 
 .fillwidth {
@@ -642,7 +645,7 @@ body {
 }
 
 .carousel-indicators li {
-    background: url(../img/triangle.png) no-repeat;
+    background: url(../img/triangle_active.png) no-repeat;
     background-size: 20px 20px;
     width:20px;
     height:20px;
@@ -652,7 +655,7 @@ body {
     border-radius: 0;
 }
 .carousel-indicators .active {
-    background: url(../img/triangle_active.png) no-repeat;
+    background: url(../img/triangle_red.png) no-repeat;
     background-size: 20px 20px;
     background-color: transparent;
     width:20px;
@@ -667,8 +670,7 @@ body {
 	color:white;
     position: absolute;
     top: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 6vw;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -684,16 +686,18 @@ body {
 }
 
 .caption-carousel h2 {
-    font-family: 'Proxima','Helvetica Neue',Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 4.5em ;
+    font-family: Open Sans, Arial, sans-serif;
+    font-size: 5.5vw;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
 .caption-carousel h3 {
     font-family: Open Sans, Arial, sans-serif;
-    font-size: 2em;
-    padding-left: 20%;
-    padding-right: 20%;
+    font-size: 19px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    line-height: 30px;
 }
 
 @media (max-width: 767px) {
@@ -796,7 +800,7 @@ body {
 
 .concept-header {
     text-align: center;
-    background-image: url(../img/slide9.jpeg);
+    background-image: url(../img/conc-header.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -805,21 +809,329 @@ body {
 }
 
 .concept-header h2 {
-    font-family: 'Proxima','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans',Arial,sans-serif;
     text-transform: uppercase;
-    font-size: 4.5em ;
+    font-size: 4.5em;
+    font-weight: 600;
+    letter-spacing: 5px;
 }
-
+.concept-header h3 {
+    font-family: 'Open Sans',Arial,sans-serif;
+    text-transform: none;
+    font-size: 3.0em ;
+     font-weight: 300;
+     letter-spacing: 2px;
+}
 .slide1 {
-    background-image: url(../img/slide14.jpeg);
+    background-image: url(../img/conc-slider-1.png);
     background-position: center;
     background-size: cover;
     height:100%;
 }
-
+.slide2 {
+    background-image: url(../img/conc-slider-2.png);
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
+.slide3 {
+    background-image: url(../img/conc-slider-3.png);
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
+.slide4 {
+    background-image: url(../img/conc-slider-4.png);
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
 
 .concept-carousel {
 	margin:0;
 	padding: 0;
 }
 
+.bg-red-skew {
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: rgba(113,34,33,1);
+    height:100vh;
+    -webkit-transform: skewX(11deg);
+    -moz-transform: skewX(11deg);
+    -ms-transform: skewX(11deg);
+    -o-transform: skewX(11deg);
+    transform: skewX(11deg);
+    -webkit-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.bg-red-skew-right {
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(113,34,33,1);
+    height:100vh;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    -webkit-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: -100% 100%;
+}
+
+.conc-second-text {
+    vertical-align: middle;
+    font-size: 5.5vw;
+    font-weight: 500;
+    letter-spacing: 3px;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-left: 3vw;
+    padding-right: 6vw;
+}
+
+.conc-second-text p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    .conc-second-text {
+        font-size: 60px;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+}
+
+.bg-red {
+    background-color: #712221;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.conc-second-img {
+    text-align: center;
+    color: white;
+    font-size:17px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.conc-second-img p{
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+.conc-second-img hr {
+    margin-top: 10px;
+}
+
+.conc-second-img img{
+    max-width:100%;
+    max-height:100%
+}
+.conc-second-img-1 {
+    padding-top: 7vh;
+}
+
+.conc-second-img-2{
+    padding-top: 5vh;
+}
+
+.conc-third {
+    height: 100vh;
+    min-height:100vh;
+    min-width: 100%;
+    width:100%;
+    background-image: url(../img/conc-third.png);
+    background-size: cover;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+
+
+.conc-third img {
+    max-width:100%;
+    max-height:100%;
+    padding: 8vh 10vw;
+}
+
+.conc-third-body {
+    padding: 8vh 10vw 8vh 10vw;
+    height:100vh;
+    text-align: center;
+    color: white;
+}
+
+.conc-third-body h1{
+    font-size: 60px !important;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 120%;
+}
+
+.conc-third-body h2{
+    font-size: 20px !important;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.conc-third-body .btn {
+    width: 30vw;
+    height: 10vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding:0;
+}
+
+.btn h2 {
+    margin: 0;
+    line-height: 10vh;
+}
+
+@media (max-width: 767px) {
+    .conc-third {
+        height: auto;
+    }
+    .conc-third-body h1{
+        font-size: 40px !important;
+    }
+    .conc-third img {
+        padding: 8vh 0vw;
+    }
+    .btn h2 {
+        font-size:12px !important;
+        white-space: normal;
+        line-height: 3vh;
+    }
+
+    .btn {
+        display: inline-flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .conc-second-img-1 {
+        padding-top: 7vh;
+        padding-bottom: 18vh;
+    }
+
+    .conc-second-img-2{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+
+    }
+}
+
+.conc-fourth {
+    min-height:100vh;
+    min-width: 100%;
+    background-image: url(../img/conc-fourth.jpg);
+    background-size: cover;
+    text-align: center;
+    padding:0;
+    overflow-x:hidden;
+    width:100%;
+}
+.conc-fourth-header {
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 60px !important;
+    color: #712221;
+    height: 30vh;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+    .conc-fourth {
+        height: auto;
+    }
+}
+
+.conc-fourth-body {
+    height: 70vh;
+    padding: 4vw 8vw 0 10vw;
+    z-index: 0;
+    font-weight: 600;
+    text-align: middle;
+}
+
+
+.white-triangle-left {
+    z-index:-1;
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20vw 80vh 16.66666vw;
+    border-color: transparent transparent rgba(255,255,355,0.7) transparent;
+}
+.white-triangle-middle {
+    z-index:-1;
+    position: absolute;
+    left:-3.333333vw;
+    bottom:0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20vw 80vh 20vw;
+    border-color: transparent transparent rgba(255,255,355,0.7) transparent;
+}
+.white-triangle-right {
+    z-index:-1;
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 16.666666vw 80vh 20vw ;
+    border-color: transparent transparent rgba(255,255,355,0.7) transparent;
+}
+
+.conc-fourth-body img {
+   max-width: 30%;
+   height: 16%;
+}
+
+.conc-fourth-body p {
+    color:#712221;
+    font-size: 30px;
+}
+
+.conc-fourth-body.left {
+    padding: 5vw 8vw 0 10vw;
+}
+
+.conc-fourth-body.middle {
+    padding: 5vw 8vw 0 8vw;
+}
+
+.conc-fourth-body.right {
+    padding: 5vw 10vw 0 8vw;
+}
+.slider-text {
+
+}
