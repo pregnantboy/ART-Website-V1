@@ -800,11 +800,15 @@ body {
 
 .insurance-header {
     text-align: center;
-    background-image: url(../img/ins-header.jpeg);
+    background: -webkit-radial-gradient(circle, rgba(0,0,0,0.3) ,rgba(0,0,0,0.05),rgba(255,255,255,0.1)),url(../img/ins-header.jpeg);
+    background: -o-radial-gradient(circle,  rgba(0,0,0,0.4) ,transparent),url(../img/ins-header.jpeg);
+    background: -moz-radial-gradient(circle,  rgba(0,0,0,0.4) ,transparent),url(../img/ins-header.jpeg);
+    background: radial-gradient(circle, r rgba(0,0,0,0.4) ,transparent),url(../img/ins-header.jpeg); 
+
     background-size: cover;
     background-repeat: no-repeat;
     position:absolute;
- 
+    
     top:0;
     left:0;
     height:100%;
