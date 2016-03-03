@@ -109,6 +109,54 @@ h6 {
     font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+    font-family: 'Open Sans',Arial,sans-serif;
+    text-transform: none;
+    font-size: 80px;
+    font-size: 5.5vw !important;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-family: 'Open Sans',Arial,sans-serif;
+    text-transform: none;
+    font-size: 3.5vw !important;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-family: Open Sans, Arial, sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 1px !important;
+    font-weight: 300;
+    line-height: 30px;
+}
+h4{
+    font-size:1.3vw;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 25px;
+
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 40px!important;
+    }
+    h2 {
+        font-size:30px!important;
+    }
+    h3 {
+        font-size:19px;
+    }
+    h4 {
+        font-size:15px;
+    }
+}
+
+
 p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -686,6 +734,7 @@ body {
     align-items: center;
     justify-content:center;
     height: 100%;
+    width:100%;
 }
 
 .caption-carousel h2 {
@@ -748,20 +797,22 @@ body {
     border-radius: 50%;
 }
 
+
 .insurance-header {
     text-align: center;
-    background-image: url(../img/slide9.jpeg);
+    background-image: url(../img/ins-header.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
-
-.insurance-header h2 {
-    font-family: 'Proxima','Helvetica Neue',Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 4.5em ;
+    position:absolute;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
 }
 
 .bg-faded-skew {
@@ -788,17 +839,7 @@ body {
     color:white;
 }
 
-.ins-first-text h1 {
-    font-weight: 700;
-    line-height: 60px;
-    font-size: 50px;
-}
 
-.ins-first-text h3 {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 200;
-}
 
 .ins-first {
     background-image: url(../img/ins-first.png);
@@ -910,6 +951,9 @@ body {
     .ins-third {
         min-height: 60vh;
         height: 60vh;
+    }
+    .ins-second-text {
+        text-align: left;
     }
 
 }
