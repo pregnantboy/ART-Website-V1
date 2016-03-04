@@ -112,10 +112,9 @@ h6 {
 h1 {
     font-family: 'Open Sans',Arial,sans-serif;
     text-transform: none;
-    font-size: 80px;
-    font-size: 5.5vw !important;
+    font-size: 55px !important;
     font-weight: 400;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 h2 {
@@ -806,10 +805,10 @@ body {
 
 .insurance-header {
     text-align: center;
-    background: -webkit-radial-gradient(circle, rgba(0,0,0,0.3) ,rgba(0,0,0,0.05),rgba(255,255,255,0.1)),url(../img/ins-header.jpeg);
-    background: -o-radial-gradient(circle,  rgba(0,0,0,0.4) ,transparent),url(../img/ins-header.jpeg);
-    background: -moz-radial-gradient(circle,  rgba(0,0,0,0.4) ,transparent),url(../img/ins-header.jpeg);
-    background: radial-gradient(circle, r rgba(0,0,0,0.4) ,transparent),url(../img/ins-header.jpeg); 
+    background: -webkit-radial-gradient(circle, rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-header.jpeg);
+    background: -o-radial-gradient(circle,  rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-header.jpeg);
+    background: -moz-radial-gradient(circle,  rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-header.jpeg);
+    background: radial-gradient(circle, rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-header.jpeg); 
 
     background-size: cover;
     background-repeat: no-repeat;
