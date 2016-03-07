@@ -60,3 +60,8 @@
   content: counters(item, ".") " ";
 }
 
+a {
+  color:#712221;
+  text-decoration: underline;
+}
+

@@ -883,6 +883,13 @@ body {
 	padding: 0;
 }
 
+@media (max-width: 767px)  {
+    .slide1,.slide2, .slide3,.slide4 {
+        background-image: url(../img/conc-second.png);
+        height:100%;
+    }
+}
+
 .bg-red-skew {
     position: absolute;
     top:0;
