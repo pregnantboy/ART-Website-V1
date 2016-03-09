@@ -9,9 +9,9 @@
 }
 
 .btn-secondary {
-    border-color:rgba(113,34,33,1);
+    border-color:rgba(103,0,1,1);
     color: rgba(249,249,249,1);
-    background-color: rgba(113,34,33,1);
+    background-color: rgba(103,0,1,1);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -32,7 +32,7 @@
 
 .contact {
     background-color:  rgba(249,249,249,1) ;
-    color:rgba(113,34,33,1) ;
+    color:rgba(103,0,1,1) ;
     position: relative;
     overflow: hidden;
     padding: 50px 0 20px;
@@ -49,7 +49,7 @@
 
 .contact a {
 	font-size: 15px;
-	color:rgba(113,34,33,1);
+	color:rgba(103,0,1,1);
 	text-decoration: none;
 	  -webkit-transition: all 1000ms ease;
     -moz-transition: all 1000ms ease;
@@ -75,7 +75,7 @@
 
 .copyright {
 	color: #96281B;
-	background-color: #712221;
+	background-color: #670001;
 	position: absolute;
 	width:100%;
 	text-align: right;
