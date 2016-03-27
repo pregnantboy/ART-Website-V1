@@ -139,20 +139,28 @@ function ct_founder_add_customizer_content( $wp_customize ) {
 					'sanitize_callback' => 'ct_founder_sanitize_skype',
 					'transport'         => 'postMessage'
 				) );
+				// control
+				$wp_customize->add_control( $social_site, array(
+					'type'        => 'url',
+					'label'       => $label,
+					'description' => sprintf( __( 'Accepts Skype link protocol (<a href="%s" target="_blank">learn more</a>)', 'founder' ), 'https://www.competethemes.com/blog/skype-links-wordpress/' ),
+					'section'     => 'ct_founder_social_media_icons',
+					'priority'    => $priority
+				) );
 			} else {
 				// setting
 				$wp_customize->add_setting( $social_site, array(
 					'sanitize_callback' => 'esc_url_raw',
 					'transport'         => 'postMessage'
 				) );
+				// control
+				$wp_customize->add_control( $social_site, array(
+					'type'     => 'url',
+					'label'    => $label,
+					'section'  => 'ct_founder_social_media_icons',
+					'priority' => $priority
+				) );
 			}
-			// control
-			$wp_customize->add_control( $social_site, array(
-				'type'     => 'url',
-				'label'    => $label,
-				'section'  => 'ct_founder_social_media_icons',
-				'priority' => $priority
-			) );
 		}
 		// increment the priority for next site
 		$priority = $priority + 5;
@@ -349,7 +357,14 @@ function ct_founder_sanitize_css( $css ) {
 
 function ct_founder_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/founder-pro/\" target=\"_blank\">" . __( 'View the Founder Pro Plugin', 'founder' ) . " <span>&rarr;</span></a></div>')</script>";
+	$ad_copy = '';
+	$ad_copy .= "<p><a target=\"_blank\" href=\"https://www.competethemes.com/founder-pro/\">Founder Pro</a> adds 12 new features that let you customize every aspect of your site.</p>";
+	$ad_copy .= "<p>It installs in seconds and lets you:</p>";
+	$ad_copy .= "<ul><li>Replace any Featured Image with a slider or video</li><li>Change the color of any part of your site</li><li>Choose from over 700 fonts</li><li>Add new menus</li><li>and more...</li></ul>";
+	$ad_copy .= "<p>Customize any part of your site with Founder Pro.</p>";
+	$ad_copy .= "<p><a target=\"_blank\" href=\"https://www.competethemes.com/founder-pro/\">Click here to get your copy now</a>.</p>";
+
+	$content = "<script>jQuery('#customize-info').prepend('<div id=\"upgrade-ad\" class=\"upgrades-ad\"><button id=\"ad-button\">" . __( 'Get More Customization Features', 'founder' ) . " <span class=\"down-arrow\"></span></button><div class=\"copy-container\">" . $ad_copy . "</div></div>')</script>";
 	echo apply_filters( 'ct_founder_customizer_ad', $content );
 }
 

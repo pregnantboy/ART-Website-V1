@@ -6,7 +6,7 @@ if ( ! isset( $content_width ) ) {
 
 if ( ! function_exists( ( 'ct_founder_theme_setup' ) ) ) {
 	function ct_founder_theme_setup() {
-
+		show_admin_bar(false);
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
