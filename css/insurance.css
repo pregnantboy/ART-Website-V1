@@ -201,7 +201,6 @@ section {
     src: url('fonts/Prociono/Prociono-Regular.otf');
 }
 
-
 .navbar-default {
     border-color: rgba(0,34,34,0);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -250,7 +249,7 @@ section {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: rgba(255,255,255,0.8)!important;
+    color: rgba(255,255,255,0.8);
     font-weight:700;
     background-color: transparent;
 }
@@ -273,29 +272,33 @@ section {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,0.6);
+        color: rgba(0,0,0,0.6);
         font-size: 15px; /* max font size for big devices*/
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: rgba(22,22,22,.9);
     }
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
-    }
+        color: rgba(22,22,22,.6);
+     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
+        color: rgba(22,22,22,.9);
     }
 
     .navbar-default .nav > li.active>a,
     .navbar-default .nav>li.active>a:focus {
-        color: rgba(255,255,255,0.8)!important;   
+        color: rgba(25,25,25,0.7);   
         background-color: transparent;
+    }
+
+    .navbar-default .nav>li.active>a:hover {
+        color: rgba(25,25,25,0.9);   
     }
 
     .navbar-default.affix {
@@ -304,7 +307,7 @@ section {
     }
     .navbar-default.affix .nav > li.active>a,
     .navbar-default.affix .nav>li.active>a:focus {
-         color: rgba(103,0,1,1) !important;
+        color: rgba(103,0,1,1) !important;
         font-weight:700;
         background-color: transparent;
     }
@@ -329,6 +332,7 @@ section {
         color: rgba(103,0,1,.8);
     }
 }
+
 
 header {
     position: relative;
@@ -669,8 +673,9 @@ body {
 }
 
 .fillwidth {
-    min-width: 100vw;
-    max-width: 100vw;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
 }
  
@@ -805,11 +810,12 @@ body {
 
 .insurance-header {
     text-align: center;
-    background: -webkit-radial-gradient(circle, rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-cover.png);
+    /*background: -webkit-radial-gradient(circle, rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-cover.png);
     background: -o-radial-gradient(circle,  rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-cover.png);
     background: -moz-radial-gradient(circle,  rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-cover.png);
-    background: radial-gradient(circle, rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-cover.png); 
+    background: radial-gradient(circle, rgba(0,0,0,0.4) ,rgba(0,0,0,0.1),rgba(255,255,255,0.1)),url(../img/ins-cover.png); */
 
+    background-image: url(../img/ins-cover.png);;
     background-size: cover;
     background-repeat: no-repeat;
     position:absolute;
@@ -836,130 +842,84 @@ body {
     transform-origin: 100% 100%;
 }
 
-.ins-first-text {
-    position: absolute;
-    left:0;
-    top: 0;
-    padding: 5vh 17vw 5vw 5vh;
-    color:white;
+.ins-first {
+    background-color: rgb(233,233,233);
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin:0;
+    overflow-x:hidden;
 }
 
-
-
-.ins-first {
-    background-image: url(../img/ins-first.png);
-    background-size: cover;
-    background-position: center;
-    min-height:100vh;
-    display: block;
+.ins-first-img {
+    width: 100%;
+    overflow-x:hidden;
 }
 
 .ins-second {
-    background-image: url(../img/ins-second.png);
-    background-size: cover;
-    background-position: center;
-    height:100vh;
-    min-height: 100vh;
+    background-color: rgb(233,233,233);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width:100%;
+    display:block;
+}
+
+.ins-second-heading {
+    padding-bottom: 3vh;
+    padding-left: 5vw;
+    display:inline-flex;
+}
+
+.ins-second-body .row {
+    display: flex;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.ins-second-body .row.mobile-only {
+    display:none;
+}
+
+.ins-second-img {
+    padding-top: 12px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center 
 }
 
 .ins-second-text {
-    text-align: right;
-    padding: 8vh 5vw 5vh 5vw;
-}
-.ins-second-text h1 {
-    font-weight: 700;
-    line-height: 60px;
-    font-size: 40px;
+    height: 100%;
 }
 
-.ins-second-text h3 {
-    text-align: justify;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 200;
-}
-
-.ins-third {
-    background-image: url(../img/ins-third.png);
-    background-size: cover;
-    background-position: center;
-    height:100vh;
-    min-height: 100vh;
-}
-
-.ins-third-text {
-    text-align: left;
-    padding: 8vh 5vw 5vh 5vw;
-}
-.ins-third-text h1 {
-    font-weight: 700;
-    line-height: 60px;
-    font-size: 40px;
-}
-
-.ins-third-text h3 {
-    text-align: justify;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 200;
+.ins-second-img img {
+    height: 100px;
 }
 
 .mobile-only {
     display:none;
 }
+
+
 @media (max-width: 767px) {
+    .ins-second-body .row.mobile-only {
+        display:flex;
+        padding-bottom:0;
+        padding-top: 0;
+
+    }
     .mobile-removed {
         display:none;
+    }
+    .ins-second {
+        padding-top: 30px;
+    }
+    .ins-second-img img {
+        max-height: 40px;
     }
     .mobile-only {
         display:block;
     }
-    .ins-first-text h1 {
-        line-height: 40px;
-        font-size: 30px;
-    }
-    .ins-second-text h1 {
-        line-height: 40px;
-        font-size: 30px;
-    }
-    .ins-third-text h1 {
-        line-height: 40px;
-        font-size: 30px;
-    }
-    .ins-first-text h3
-     {
-        line-height: 4.5vh;
-        font-size: 4.3vw;
-    }
-    .ins-second-text h3
-     {
-        line-height: 4.5vh;
-        font-size: 4.3vw;
-    }
-    .ins-third-text h3
-     {
-        line-height: 4.5vh;
-        font-size: 4.3vw;
-    }
-    .bg-faded-skew {
-        -webkit-transform: skewX(10deg);
-        -moz-transform: skewX(10deg);
-        -ms-transform: skewX(10deg);
-        -o-transform: skewX(10deg);
-        transform: skewX(10deg);
-        height:inherit;    
-    }
-    .ins-second {
-        min-height: 40vh;
-        height: 40vh;
-    }
-    .ins-third {
-        min-height: 60vh;
-        height: 60vh;
-    }
-    .ins-second-text {
-        text-align: left;
-    }
-
 }
 

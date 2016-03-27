@@ -776,7 +776,7 @@ body {
 
 .technology-header {
     text-align: center;
-    background-image: url(../img/tech-slider.png);
+    background-image: url(../img/tech-cover.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

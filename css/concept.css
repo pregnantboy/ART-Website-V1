@@ -210,8 +210,6 @@ section {
     font-family: 'Prociono'; 
     src: url('fonts/Prociono/Prociono-Regular.otf');
 }
-
-
 .navbar-default {
     border-color: rgba(0,34,34,0);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -260,7 +258,7 @@ section {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: rgba(255,255,255,0.8)!important;
+    color: rgba(255,255,255,0.8);
     font-weight:700;
     background-color: transparent;
 }
@@ -304,8 +302,12 @@ section {
 
     .navbar-default .nav > li.active>a,
     .navbar-default .nav>li.active>a:focus {
-        color: rgba(25,25,25,0.7)!important;   
+        color: rgba(25,25,25,0.7);   
         background-color: transparent;
+    }
+
+    .navbar-default .nav>li.active>a:hover {
+        color: rgba(25,25,25,0.9);   
     }
 
     .navbar-default.affix {
