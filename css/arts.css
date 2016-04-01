@@ -801,6 +801,7 @@ body {
     background-image: url(../img/slide9.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    display: -webkit-flex;
     display: flex;
     justify-content: center; 
     align-items: center; 

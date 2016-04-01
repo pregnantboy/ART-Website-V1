@@ -64,18 +64,19 @@
         <header class = "fill" >
             <div class = "insurance-header"></div>
             <div class="caption-carousel">
-                    <h1>Simple. Accessible. Useful.</h1>
+                <div>
+                    <h3 class="subheading">We make insurance</h3>
+                    <h1>Simple, Affordable and Convenient</h1>
+                </div>
             </div>
         </header>
         <section class="ins-first fillwidth">
             <img class ="ins-first-img mobile-removed" src="img/ins-first.png"/>
             <img class ="ins-first-img mobile-only" src="img/ins-first-mobile.png"/>
+            <button class="btn btn-sharp stepsbtn" id="stepsbtn">Learn More</button>
         </section>
-        <section class="ins-second fillwidth">
+        <section class="fillwidth ins-second">
             <div class="ins-second-body col-xs-12">
-                <div class="ins-second-heading">
-                    <h2>How It Works</h2>
-                </div>
                 <div class= "row mobile-only">
                     <div class="ins-second-img col-sm-2 ">
                         <img src = "img/ins-1.png"/>
@@ -151,7 +152,56 @@
                 </div>
             </div>
         </section>
-    <section id="contact" class="contact"></section>
+        <section class="last-panel">
+            <div class = "col-xs-12 last-panel-row">
+                <div class="col-xs-12 mobile-only">
+                     <img src = "img/ins-last-1.png"/>
+                </div>
+                <div class = "col-xs-12 col-sm-6 text-last">
+                    <div>
+                        <h2>Anyone, Anywhere</h2>
+                        <h4>The proliferation of mobile technology and digitalization of business process transform the way we buy and sell insurance.
+                        <br/><br/>
+                        Rural communities and remote settlements can now insure themselves within a few taps and clicks on low-cost mobile devices.</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6 image-top mobile-removed">
+                    <img src = "img/ins-last-1.png" style="padding-bottom:0;"/>
+                </div>
+            </div>
+            <div class="col-xs-12 last-panel-row grey">
+                <div class="col-sm-6">
+                    <img src = "img/ins-last-2.png"/>
+                </div>
+                <div class = "col-xs-12 col-sm-6 text-last">
+                    <div>
+                        <h2>Simple & Clear Policies</h2>
+                        <h4>No more confusing paperwork and complex clauses. New insurance products require far lesser customer inputs to complete the underwriting process.
+                        <br/><br/>
+                        By designing payouts in accordance to actual event statistics, we communicate simple and clear payout conditions to foster customer understanding and trust.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+             <div class="col-xs-12 last-panel-row">
+                <div class="col-xs-12 mobile-only">
+                     <img src = "img/ins-last-3.png"/>
+                </div>
+                <div class = "col-xs-12 col-sm-6 text-last">
+                    <div>
+                        <h2>Fast & Transparent Payouts</h2>
+                        <h4>In place of costly and time-consuming claim settlement processes, parametric triggers utilise actual disaster statistics from official sources to determine payout amounts in a quick and honest way.
+                        <br/><br/>
+                        Payouts can be easily redeemed via mobile payment systems or at offices at our partnering insurance companies.
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 mobile-removed">
+                    <img src = "img/ins-last-3.png"/>
+                </div>
+            </div> 
+        </section>
+    <section id="contact" class="contact" style="display: block;"></section>
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -184,6 +234,12 @@
     setTimeout(function(){
     $('.navbar-default').css({'opacity':1});
     },1000);
+    });
+
+    $(function(){
+        $('#stepsbtn').click(function () {
+             $('.ins-second').slideDown(1000);
+        });
     });
     </script>
 </body>
