@@ -73,13 +73,7 @@
     font-weight: 500;
 }
 
-.copyright {
-	color: #96281B;
-	background-color: #670001;
-	position: absolute;
-	width:100%;
-	text-align: right;
-	padding-right: 4px;
-	bottom: 0px;
-	font-size: 10px;
+.feed {
+    height:100%;
+    position: absolute;
 }

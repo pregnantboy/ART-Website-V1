@@ -226,6 +226,7 @@ section {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     font-size: 0px;
+    padding-right:0;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
